@@ -63,7 +63,7 @@ class MainActivity : ComponentActivity() {
 
 //Function which runs the if statements to compare the input of the
 // user (timeOfDay) to the strings in the if statements
-                    fun mealPlan(): String {
+                    fun mealPlan(): String { //W3Schools, 1999
                         if (timeOfDay.lowercase() == "morning") {
                             return "Bacon, eggs and toast with a cup of coffee"
                         }
@@ -95,7 +95,7 @@ Box (modifier = Modifier
     )
     .background(Color.Black.copy(alpha = 0.2f)), //Gives a layer of black with low opacity on top of the image
     contentAlignment = Alignment.Center, //Centers the box
-
+//(Microsoft Copilot, 2023 )
     ) {
 
     Text(
@@ -146,7 +146,7 @@ Box (modifier = Modifier
             value = timeOfDay, //The time of day entered in the input field is stored in the  timeOfDay variable
             onValueChange = { timeInput ->
                 timeOfDay = timeInput
-
+                    //(Part 5 - TextField.mp4, 2025)
             }
         )
 
@@ -198,7 +198,7 @@ Box (modifier = Modifier
                     fontFamily = FontFamily.Cursive,
                     fontWeight = FontWeight.Bold,
                     text = "Reset"
-                )
+                ) //(Button Composable.mp4)
             }
         }
 
@@ -217,6 +217,16 @@ Box (modifier = Modifier
     }
 }
 
+                    //Test Logs:
+                    /*
+                    * Test 1: Tested to see of the image added would display on the emulator - the image did display properly
+                    * Test 2: Created the timeOfDay variable and used hard coded input to test the if statements - later added the else statement for error handling
+                    * Test 3: Added a TextField and button, removed the hard coded input from the timeOfDay variable and tested if the input in the TextField will be read by the if statements
+                    * Test 4: Made the first button a submit button and used it to submit the input from the TextField to the timeOfDay variable
+                    * Test 5: Made a new variable (meal) which stores the results from the if statements based on the users input
+                    * Test 6: Made a Text composable which displays the results stored in the meal variable
+                    * Test 7: Made the reset button which needs to clear the TextField of any text and revert the meal variable to its original state
+                    * */
 
 
 
